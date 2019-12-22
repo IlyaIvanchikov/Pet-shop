@@ -1,0 +1,69 @@
+  <nav>
+    <div class="nav-wrapper #512da8 deep-purple darken-2">
+      <a href="/" class="brand-logo">Зоомагазин №1</a>
+      <a href="/" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        {{#if isHome}}
+        <li class="active"><a href="/">Главная</a></li>
+        {{else}}
+        <li><a href="/">Главная</a></li>
+        {{/if}}
+        {{#if isContacts}}
+        <li class="active"><a href="/contacts">Контакты</a></li>
+        {{else}}
+        <li><a href="/contacts">Контакты</a></li>
+        {{/if}}
+        {{#if isDelivery}}
+        <li class="active"><a href="/delivery">Доставка</a></li>
+        {{else}}
+        <li><a href="/delivery">Доставка</a></li>
+        {{/if}}
+        {{#if isAuth}}
+              {{#if isProfile}}
+              <li class="active"><a href="/profile">Profile</a></li>
+              {{else}}
+              <li><a href="/profile">Profile</a></li>
+            {{/if}}
+            <li><a href="auth/logout">Logout</a></li>
+          {{else}}
+          {{#if isLogin}}
+          <li class="active"><a href="/auth/login#login">Авторизация</a></li>
+          {{else}}
+          <li><a href="/auth/login#login">Авторизация</a></li>
+          {{/if}}
+        {{/if}}
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+        {{#if isHome}}
+        <li class="active"><a href="/">Главная</a></li>
+        {{else}}
+        <li><a href="/">Главная</a></li>
+        {{/if}}
+        {{#if isContacts}}
+        <li class="active"><a href="/">Контакты</a></li>
+        {{else}}
+        <li><a href="/">Контакты</a></li>
+        {{/if}}
+        {{#if isDelivery}}
+        <li class="active"><a href="/delivery">Доставка</a></li>
+        {{else}}
+        <li><a href="/delivery">Доставка</a></li>
+        {{/if}}
+        {{#if isAuth}}
+              {{#if isProfile}}
+              <li class="active"><a href="/profile">Profile</a></li>
+              {{else}}
+              <li><a href="/profile">Profile</a></li>
+            {{/if}}
+            <li><a href="auth/logout">Logout</a></li>
+          {{else}}
+          {{#if isLogin}}
+          <li class="active"><a href="/auth/login#login">Авторизация</a></li>
+          {{else}}
+          <li><a href="/auth/login#login">Авторизация</a></li>
+          {{/if}}
+        {{/if}}
+      </ul>
