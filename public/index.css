@@ -1,3 +1,25 @@
 body {
     background-color: rgb(98, 180, 123);
 }
+
+.redt {
+    color: red;
+}
+
+.row > p {
+    font-size: 24px;
+}
+
+.show > p {
+    font-size: 24px;
+}
+
+.show {
+    position: relative;
+    display: flex;
+    border: 1px solid black;
+}
+
+.imgDelivery {
+    margin-bottom: 1em;
+}
