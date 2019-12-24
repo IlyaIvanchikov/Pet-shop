@@ -2,6 +2,7 @@ const express = require('express');
 const routerHome = require('./routes/index');
 const routerContacts = require('./routes/contacts');
 const routerDelivery = require('./routes/delivery');
+const routerAuth = require('./routes/auth');
 const exphbs = require('express-handlebars');
 const path = require('path');
 
@@ -23,6 +24,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(routerHome);
 app.use(routerContacts);
 app.use(routerDelivery);
+app.use(routerAuth);
 
 const PORT = process.env.PORT || 3000;
 
