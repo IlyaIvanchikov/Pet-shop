@@ -23,3 +23,16 @@ body {
 .imgDelivery {
     margin-bottom: 1em;
 }
+
+.auth {
+    background-color: rgb(116, 182, 135);
+    padding-bottom: 2em;
+}
+
+.alert {
+    padding: .5rem 1rem;
+    background: rgba(255, 0, 0, .3);
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}

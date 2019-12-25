@@ -1,4 +1,4 @@
-<div class="row auth green">
+<div class="row auth">
   <div class="col s12">
     <ul class="tabs">
       <li class="tab col s6"><a class="active" href="#login">Войти</a></li>
@@ -6,11 +6,14 @@
     </ul>
   </div>
   <div id="login" class="col s6 offset-s3">
+    {{#if LoginError}}
+    <p class="alert">{{LoginError}}</p>
+    {{/if}}
     <h1>Вход</h1>
     <form action="/auth/login" method="POST">
       <div class="input-field">
         <input placeholder="login" name="login" id="login" type="text" class="validate" required>
-        <label for="login">Пожауйста введите логин</label>
+        <label class="label" for="login"><p>Пожауйста введите логин</p></label>
         <span class="helper-text" data-error="Wrong" data-success="Success"></span>
       </div>
       <div class="input-field">
