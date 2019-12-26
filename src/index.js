@@ -8,6 +8,7 @@ const exphbs = require('express-handlebars');
 const path = require('path');
 const session = require('express-session');
 const app = express();
+const $ = require("jquery");
 
 
 
@@ -21,7 +22,12 @@ app.set('views', 'views');
 app.use(express.static('public'));
 app.use(express.static('images'));
 app.use(express.urlencoded({ extended: true }));
-app.use(session({ secret: '123' }));
+app.use(session({ 
+    secret: '123',
+    resave: false,
+    saveUninitialized: false, 
+}));
+
 app.use(flash());
 app.use(routerHome);
 app.use(routerContacts);

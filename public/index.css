@@ -36,3 +36,14 @@ body {
     border-radius: 10px;
     margin-bottom: 1rem;
 }
+
+.highlight {
+    opacity: 0.8;
+    -webkit-box-shadow: 10px -11px 64px 3px rgba(176,33,33,1);
+    -moz-box-shadow: 10px -11px 64px 3px rgba(176,33,33,1);
+     box-shadow: 10px -11px 64px 3px rgba(176,33,33,1);
+}
+
+.header:hover {
+    font-size: 12px;
+}
