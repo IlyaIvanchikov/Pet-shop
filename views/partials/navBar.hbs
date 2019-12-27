@@ -19,12 +19,7 @@
         <li><a href="/delivery">Доставка</a></li>
         {{/if}}
         {{#if isAuth}}
-              {{#if isProfile}}
-              <li class="active"><a href="/profile">Profile</a></li>
-              {{else}}
-              <li><a href="/profile">Profile</a></li>
-            {{/if}}
-            <li><a href="auth/logout">Logout</a></li>
+            <li><a href="auth/logout">Выйти</a></li>
           {{else}}
           {{#if isLogin}}
           <li class="active"><a href="/auth/login#login">Авторизация</a></li>

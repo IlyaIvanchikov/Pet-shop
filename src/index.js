@@ -8,8 +8,7 @@ const exphbs = require('express-handlebars');
 const path = require('path');
 const session = require('express-session');
 const app = express();
-const $ = require("jquery");
-
+const middlewareVariables = require('./middleware/variables');
 
 
 
@@ -27,12 +26,13 @@ app.use(session({
     resave: false,
     saveUninitialized: false, 
 }));
-
+app.use(middlewareVariables);
 app.use(flash());
 app.use(routerHome);
 app.use(routerContacts);
 app.use(routerDelivery);
 app.use(routerAuth);
+
 
 const PORT = process.env.PORT || 3000;
 
